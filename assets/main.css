@@ -17,7 +17,7 @@ body {
 	font-family: "Comic Relief", system-ui;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 150%;
 	text-align: center;
 	color: #000;
@@ -26,7 +26,6 @@ body {
 
 section#container {
 	margin: 0 auto;
-	text-align: left;
 }
 
 .black {
@@ -36,12 +35,17 @@ section#container {
 
 h1#sitename {
 	font-size: 1.3em;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 h1 {
 	font-size: 2.6em;
-	font-weight: 100;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-weight: 400;
 }
 
 p {
@@ -56,9 +60,20 @@ p {
 	color: #888;
 }
 
+img.fullwidth-image {
+	width: 100%;
+	height: auto;
+}
+
 @media (min-width: 768px) {
 	section#container {
 		max-width: 768px;
+	}
+	
+	.project-description {
+		width: 70%;
+		margin: 0 auto;
+		text-align: left;
 	}
 }
 	
