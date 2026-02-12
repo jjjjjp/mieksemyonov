@@ -4,12 +4,14 @@
 /* fonts imports */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap');
 
 /* reset */
 body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, figcaption, figure, img, quote, div, section {
 	padding: 0;
 	margin: 0;
 	border: 0;
+	list-style: none;
 }
 
 body {
@@ -41,11 +43,13 @@ h1#sitename {
 h1 {
 	font-size: 2.6em;
 	font-weight: 400;
+	line-height: 100%;
 }
 
 h3 {
 	font-size: 1.3em;
 	font-weight: 400;
+	margin: 1em 0 0.2em;
 }
 
 p {
@@ -53,11 +57,27 @@ p {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+	margin: 0 0 1em;
 }
+
+ul, li {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 .date-stamp {
 	font-size: 75%;
 	color: #888;
+	margin-top: 2em;
+}
+
+.notes {
+	font-size: 75%;
+	font-style: italic;
+	line-height: 120%;
 }
 
 img.fullwidth-image {
@@ -65,15 +85,51 @@ img.fullwidth-image {
 	height: auto;
 }
 
-@media (min-width: 768px) {
+.columns {
+	display: block;
+	clear: both;
+	line-height: 90%;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+.c2-cols-left {
+	float: left;
+	width: calc(50% - 5px);
+	display: inline-block;
+	line-height: 90%;
+	padding: 0;
+	margin: 0;
+}
+
+.c2-cols-right {
+	float: right;
+	width: calc(50% - 5px);
+	display: inline-block;
+	line-height: 90%;
+	padding: 0;
+	margin: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+@media (min-width: 998px) {
 	section#container {
-		max-width: 768px;
+		max-width: 998px;
 	}
 	
 	.project-description {
 		width: 70%;
 		margin: 0 auto;
 		text-align: left;
+		padding: 4em 0 1.5em;
+	}
+
+	.no-padding {
+		padding: 0;
 	}
 }
 	
