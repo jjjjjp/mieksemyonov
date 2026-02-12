@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* comic relief font import */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
 /* reset */
 body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, figcaption, figure, img, quote, div, section {
 	padding: 0;
@@ -10,8 +13,18 @@ body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, figcaption, figure, img
 
 body {
 	background: #fff;
+	font-family: "Comic Relief", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 120%;
+	text-align: center;
 }
 
+section#container {
+	margin: 0 auto;
+	text-align: left;
+}
 
 @media (min-width: 576px) {
 	
